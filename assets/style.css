@@ -1,11 +1,12 @@
 body {
     display: flex;
+    gap: 30px;
 }
 
 .move-me {
     border: 0.25rem solid black;
     font: 1.5rem Georga pink;
-    width: 30rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     position: relative;
@@ -15,7 +16,7 @@ body {
 .move-me-2 {
     border: 0.25rem solid black;
     font: 1.5rem Georgia pink;
-    width: 30rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     position: relative;
@@ -25,11 +26,16 @@ body {
 .crazy-colors {
     border: 0.25rem solid black;
     font: 1.5rem Georgia pink;
-    width: 30rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     position: relative;
-    animation:  5s infinite;
+    animation: colors 1s infinite;
+}
+
+.fonts p {
+    position: relative;
+    animation: fonts 3s infinite;
 }
 
 @keyframes mymove {
@@ -53,10 +59,18 @@ body {
     20% {background-color: indigo;}
     30% {background-color: blue;}
     40% {background-color: crimson;}
-    50% {background-color: ;}
-    60% {}
-    70% {}
-    80% {}
-    90% {}
-    100%  {}
+    50% {background-color: black;}
+    60% {background-color: gold;}
+    70% {background-color: palevioletred;}
+    80% {background-color: turquoise;}
+    90% {background-color: magenta;}
+    100%  {background-color: midnightblue;}
+}
+
+@keyframes fonts {
+    0% {font-family: Verdana;}
+    25% {font-family: monospace;}
+    50% {font-family: Arial;}
+    75% {font-family: 'Franklin Goth Medium';}
+    100% {font-family: 'Gill Sans';}
 }
