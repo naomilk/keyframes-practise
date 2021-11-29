@@ -1,0 +1,62 @@
+body {
+    display: flex;
+}
+
+.move-me {
+    border: 0.25rem solid black;
+    font: 1.5rem Georga pink;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+.move-me-2 {
+    border: 0.25rem solid black;
+    font: 1.5rem Georgia pink;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: mymove2 5s infinite;
+}
+
+.crazy-colors {
+    border: 0.25rem solid black;
+    font: 1.5rem Georgia pink;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation:  5s infinite;
+}
+
+@keyframes mymove {
+    0%   {top: 0px; background-color: red;}
+    20%  {top: 200px; background-color: orange;}
+    35%  {top: 400px; background-color: yellow;}
+    50%  {top: 600px; background-color: green;}
+    65%  {top: 400px; background-color: blue;}
+    80%  {top: 200px; background-color: indigo;}
+    100% {top: 0px; background-color: violet;}
+}
+
+@keyframes mymove2 {
+    from {top: 0px; background-color: thistle;}
+    to {top: 500px; background-color: indigo;}
+}
+
+@keyframes colors {
+    0%  {background-color: pink;}
+    10%  {background-color: greenyellow;}
+    20% {background-color: indigo;}
+    30% {background-color: blue;}
+    40% {background-color: crimson;}
+    50% {background-color: ;}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100%  {}
+}
