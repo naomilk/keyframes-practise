@@ -35,6 +35,10 @@ body {
 
 .fonts p {
     position: relative;
+    font-size: 30px;
+}
+
+.fonts-animation p {
     animation: fonts 3s infinite;
 }
 

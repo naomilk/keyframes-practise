@@ -8,13 +8,21 @@
     <title>Font-Picker</title>
 </head>
 <body>
-    <div class="fonts">
+    <div class="fonts fonts-animation">
         <h1>Here are our available fonts:</h1>
-        <p>pick me!</p>
+        <p id="text">pick me!</p>
     </div>
 </body>
 </html>
 
-<script>
 
+
+<script>
+const paragraph = document.getElementsByTagName("p")[0];
+const fontsDiv = document.getElementsByClassName('fonts')[0];
+paragraph.addEventListener('click', (event) => {
+    event.target.style.color = "red";
+    event.target.innerHTML = "picked!";
+    fontsDiv.classList.remove('fonts-animation');
+});
 </script>
